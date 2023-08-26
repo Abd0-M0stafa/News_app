@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:expandable_text/expandable_text.dart';
 
-Widget scrollRow(
-    {required BuildContext context,
-    required String image,
-    required String text1,
-    required String text2,
-    required String text3}) {
+Widget scrollRow({
+  required BuildContext context,
+  required String image,
+  required String text1,
+  required String text2,
+  required String text3,
+}) {
   return Stack(
     children: [
       SizedBox(
@@ -104,7 +105,7 @@ Widget costumContainer({
 
 Widget scrollcolumn(
     {required BuildContext context,
-    required String image,
+    required NetworkImage image,
     required String text1,
     required String text2,
     required String text3}) {
@@ -113,55 +114,35 @@ Widget scrollcolumn(
     height: 128,
     child: Stack(
       children: [
-        SizedBox(
+        Container(
           width: double.infinity,
           height: 128,
-          child: ClipRRect(
-            borderRadius: BorderRadius.circular(15),
-            child: Image.asset(
-              image,
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(16),
+            image: DecorationImage(
+              image: image,
               fit: BoxFit.cover,
             ),
           ),
         ),
-        Positioned(
-          top: 10,
-          left: 20,
-          child: Text(
-            text1,
-            style: const TextStyle(
-              fontFamily: 'NewYorkSmallRegular',
-              fontSize: 18,
-              fontWeight: FontWeight.w700,
-              color: Colors.white,
+        Padding(
+          padding: const EdgeInsets.only(left: 10, top: 10, right: 10),
+          child: SizedBox(
+            height: 128,
+            width: 325,
+            child: Positioned(
+              top: 10,
+              left: 20,
+              child: Text(
+                text1,
+                style: const TextStyle(
+                  fontFamily: 'NewYorkSmallRegular',
+                  fontSize: 18,
+                  fontWeight: FontWeight.w700,
+                  color: Colors.white,
+                ),
+              ),
             ),
-          ),
-        ),
-        Positioned(
-          top: 100,
-          left: 20,
-          child: Row(
-            children: [
-              Text(
-                text2,
-                style: const TextStyle(
-                  fontFamily: 'Nunito-Bold',
-                  fontSize: 13,
-                  fontWeight: FontWeight.w800,
-                  color: Colors.white,
-                ),
-              ),
-              const SizedBox(width: 90),
-              Text(
-                text3,
-                style: const TextStyle(
-                  fontFamily: 'Nunito-Bold',
-                  fontSize: 13,
-                  fontWeight: FontWeight.w800,
-                  color: Colors.white,
-                ),
-              ),
-            ],
           ),
         ),
       ],

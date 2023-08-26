@@ -255,7 +255,8 @@ class Secondscreen extends StatelessWidget {
                 shrinkWrap: true,
                 itemBuilder: (context, index) => scrollcolumn(
                     context: context,
-                    image: 'images/nature.png',
+                    image: const NetworkImage(
+                        'https://www.google.com/search?sca_esv=560376192&sxsrf=AB5stBiVuPosprB0RkHpDtICRgL-SaapHw:1693083326899&q=flutter+photo&tbm=isch&source=lnms&sa=X&ved=2ahUKEwiumZnymvuAAxUuU6QEHc_YDkwQ0pQJegQIDhAB&biw=1536&bih=754&dpr=1.25#imgrc=TlsNUe-tV6T6AM'),
                     text1:
                         '5 things to know about the\n\'conundrum\' of lupus\n',
                     text2: 'Matt Villano\n',
