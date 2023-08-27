@@ -10,6 +10,7 @@ final class GetNewsInitial extends GetNewsState {}
 final class GetNewsLoading extends GetNewsState {}
 
 final class GetNewsSuccess extends GetNewsState {
+  @override
   final NewsModel response;
   GetNewsSuccess({required this.response});
 }

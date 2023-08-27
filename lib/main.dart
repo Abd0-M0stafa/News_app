@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:news_app/data/getNews/get_news_cubit.dart';
 import 'package:news_app/screens/first_screen.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:bloc/bloc.dart';
 
 void main() {
   runApp(const MyApp());

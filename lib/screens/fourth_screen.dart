@@ -36,7 +36,7 @@ class FourthScreen extends StatelessWidget {
                     text2:
                         'WHO classifies triple-mutant Covid variant from India as global health risk',
                     text3:
-                        'A World Health Organization official said Monday it is reclassifying the highly contagious triple-mutant Covid variant spreading in India as a “variant of concern,” indicating that it\’s become a fekefihefwhefwuihfwebefwiuhwefiuewfbiwejfbniwjgebnrweuihbweiogubwegiuhegwiunegwiounwegiouweghouigwehoweghweohewgohjewgophegwpoewghoweghegwophewg',
+                        'A World Health Organization official said Monday it is reclassifying the highly contagious triple-mutant Covid variant spreading in India as a “variant of concern,” indicating that it’s become a fekefihefwhefwuihfwebefwiuhwefiuewfbiwejfbniwjgebnrweuihbweiogubwegiuhegwiunegwiounwegiouweghouigwehoweghweohewgohjewgophegwpoewghoweghegwophewg',
                     text4: 'Published by Berkeley Lovelace Jr.'),
                 compofour(
                     image: 'images/wedding.png',

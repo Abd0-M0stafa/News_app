@@ -201,7 +201,7 @@ Widget compofour(
           expandText: 'show more',
           collapseText: 'show less',
           maxLines: 4,
-          linkColor: Color(0xFFFF3A44),
+          linkColor: const Color(0xFFFF3A44),
           style: const TextStyle(
             fontFamily: 'Nunito-Bold',
             fontSize: 14,
