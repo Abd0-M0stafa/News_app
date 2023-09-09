@@ -64,7 +64,7 @@ class FirstScreen extends StatelessWidget {
                   onTap: () {
                     Navigator.push(context,
                         MaterialPageRoute(builder: (context) {
-                      return const FourthScreen();
+                      return ThirdtScreen(index: 0);
                     }));
                   },
                   child: const Column(
@@ -111,11 +111,6 @@ class FirstScreen extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            ElevatedButton(
-                onPressed: () {
-                  context.read<GetNewsCubit>().getNews();
-                },
-                child: const Text('Let\'s Start')),
             SafeArea(
               child: SingleChildScrollView(
                 child: Padding(
@@ -282,12 +277,7 @@ class FirstScreen extends StatelessWidget {
                       ),
                       BlocBuilder<GetNewsCubit, GetNewsState>(
                         builder: (context, state) {
-                          if (state is GetNewsInitial) {
-                            return const Center(
-                              child:
-                                  Text("Please press the button to get news"),
-                            );
-                          } else if (state is GetNewsLoading) {
+                          if (state is GetNewsLoading) {
                             return const Center(
                               child: CircularProgressIndicator(),
                             );
