@@ -35,11 +35,9 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
-  carousel_slider: ^4.2.1
-  expandable_text: ^2.3.0
-  http: ^1.1.0
-  bloc: ^8.1.2
-  flutter_bloc: ^8.1.3
+  dio: ^5.4.1
+  cached_network_image: ^3.3.1
+  webview_flutter: ^4.5.0
 
 dev_dependencies:
   flutter_test:
@@ -79,14 +77,14 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  fonts:
-    - family: NewYorkSmallRegular
-      fonts:
-        - asset: assets/fonts/FontsFree-Net-NewYorkSmallRegular.ttf
+  # fonts:
+  #   - family: NewYorkSmallRegular
+  #     fonts:
+  #       - asset: assets/fonts/FontsFree-Net-NewYorkSmallRegular.ttf
 
-    - family: Nunito-Bold
-      fonts:
-        - asset: assets/fonts/nunito/Nunito-Bold.ttf
+  #   - family: Nunito-Bold
+  #     fonts:
+  #       - asset: assets/fonts/nunito/Nunito-Bold.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro
