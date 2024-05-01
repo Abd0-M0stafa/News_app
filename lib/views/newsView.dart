@@ -19,8 +19,8 @@ class _NewsViewState extends State<NewsView> {
     return Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: false,
-        title: Center(
-          child: Text('result'),
+        title: const Center(
+          child: Text('RESULT'),
         ),
       ),
       body: WebViewWidget(controller: controller),

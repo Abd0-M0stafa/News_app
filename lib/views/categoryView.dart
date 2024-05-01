@@ -9,12 +9,14 @@ class CategoryView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: CustomScrollView(
-        slivers: [
-          NewsListViewBuilder(
-            category: category,
-          )
-        ],
+      body: SafeArea(
+        child: CustomScrollView(
+          slivers: [
+            NewsListViewBuilder(
+              category: category,
+            )
+          ],
+        ),
       ),
     );
   }

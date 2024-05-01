@@ -8,16 +8,20 @@ class CategoryListView extends StatelessWidget {
   CategoryListView({super.key});
 
   List<CategoriesModel> categories = const [
-    CategoriesModel(categoryName: 'science', categoryURL: 'images/science.jpg'),
+    CategoriesModel(
+        categoryName: 'science', categoryURL: 'assets/images/science.jpg'),
     CategoriesModel(
         categoryName: 'entertainment',
-        categoryURL: 'images/entertainment .jpg'),
+        categoryURL: 'assets/images/entertainment .jpg'),
     CategoriesModel(
-        categoryName: 'business', categoryURL: 'images/business.png'),
-    CategoriesModel(categoryName: 'health', categoryURL: 'images/health.jpg'),
-    CategoriesModel(categoryName: 'sports', categoryURL: 'images/sports.jpg'),
+        categoryName: 'business', categoryURL: 'assets/images/business.png'),
     CategoriesModel(
-        categoryName: 'technology', categoryURL: 'images/technology.jpg'),
+        categoryName: 'health', categoryURL: 'assets/images/health.jpg'),
+    CategoriesModel(
+        categoryName: 'sports', categoryURL: 'assets/images/sports.jpg'),
+    CategoriesModel(
+        categoryName: 'technology',
+        categoryURL: 'assets/images/technology.jpg'),
   ];
 
   @override

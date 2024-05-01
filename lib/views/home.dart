@@ -11,6 +11,7 @@ class HomeView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         backgroundColor: Colors.transparent,
         elevation: 0,
         title: const Row(
@@ -18,7 +19,7 @@ class HomeView extends StatelessWidget {
           children: [
             Text(
               'News',
-              style: TextStyle(color: Colors.black),
+              style: TextStyle(color: Color.fromARGB(255, 255, 255, 255)),
             ),
             Text(
               'Cloud',
@@ -30,12 +31,29 @@ class HomeView extends StatelessWidget {
       body: CustomScrollView(
         physics: const BouncingScrollPhysics(),
         slivers: [
+          const SliverToBoxAdapter(
+            child: SizedBox(
+              height: 10,
+            ),
+          ),
           SliverToBoxAdapter(
             child: CategoryListView(),
           ),
           const SliverToBoxAdapter(
             child: SizedBox(
-              height: 20,
+              height: 25,
+            ),
+          ),
+          const SliverToBoxAdapter(
+            child: Center(
+                child: Text(
+              '- Hot Updates -',
+              style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold),
+            )),
+          ),
+          const SliverToBoxAdapter(
+            child: SizedBox(
+              height: 18,
             ),
           ),
           const NewsListViewBuilder(
